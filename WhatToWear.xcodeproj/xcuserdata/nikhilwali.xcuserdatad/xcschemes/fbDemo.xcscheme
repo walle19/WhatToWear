@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE48D5931B35780400400E6F"
-               BuildableName = "fbDemo.app"
-               BlueprintName = "fbDemo"
-               ReferencedContainer = "container:fbDemo.xcodeproj">
+               BuildableName = "WhatToWear.app"
+               BlueprintName = "WhatToWear"
+               ReferencedContainer = "container:WhatToWear.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE48D5AC1B35780500400E6F"
-               BuildableName = "fbDemoTests.xctest"
-               BlueprintName = "fbDemoTests"
-               ReferencedContainer = "container:fbDemo.xcodeproj">
+               BuildableName = "WhatToWearTests.xctest"
+               BlueprintName = "WhatToWearTests"
+               ReferencedContainer = "container:WhatToWear.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE48D5AC1B35780500400E6F"
-               BuildableName = "fbDemoTests.xctest"
-               BlueprintName = "fbDemoTests"
-               ReferencedContainer = "container:fbDemo.xcodeproj">
+               BuildableName = "WhatToWearTests.xctest"
+               BlueprintName = "WhatToWearTests"
+               ReferencedContainer = "container:WhatToWear.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE48D5931B35780400400E6F"
-            BuildableName = "fbDemo.app"
-            BlueprintName = "fbDemo"
-            ReferencedContainer = "container:fbDemo.xcodeproj">
+            BuildableName = "WhatToWear.app"
+            BlueprintName = "WhatToWear"
+            ReferencedContainer = "container:WhatToWear.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE48D5931B35780400400E6F"
-            BuildableName = "fbDemo.app"
-            BlueprintName = "fbDemo"
-            ReferencedContainer = "container:fbDemo.xcodeproj">
+            BuildableName = "WhatToWear.app"
+            BlueprintName = "WhatToWear"
+            ReferencedContainer = "container:WhatToWear.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE48D5931B35780400400E6F"
-            BuildableName = "fbDemo.app"
-            BlueprintName = "fbDemo"
-            ReferencedContainer = "container:fbDemo.xcodeproj">
+            BuildableName = "WhatToWear.app"
+            BlueprintName = "WhatToWear"
+            ReferencedContainer = "container:WhatToWear.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

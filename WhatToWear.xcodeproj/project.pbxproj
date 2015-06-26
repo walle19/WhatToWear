@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE48D59A1B35780500400E6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48D5991B35780500400E6F /* main.m */; };
+		BE48D5A01B35780500400E6F /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48D59F1B35780500400E6F /* InitialViewController.m */; };
+		BE48D5A31B35780500400E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE48D5A11B35780500400E6F /* Main.storyboard */; };
+		BE48D5A51B35780500400E6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE48D5A41B35780500400E6F /* Images.xcassets */; };
+		BE48D5A81B35780500400E6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE48D5A61B35780500400E6F /* LaunchScreen.xib */; };
+		BE48D5B41B35780500400E6F /* fbDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48D5B31B35780500400E6F /* fbDemoTests.m */; };
+		BE48D5C51B35AEE700400E6F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48D5C41B35AEE700400E6F /* SignUpViewController.m */; };
+		BE48D5C81B35AEF400400E6F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48D5C71B35AEF400400E6F /* LoginViewController.m */; };
+		BE515FE61B3C60E200A7EE3E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE515FE51B3C60E200A7EE3E /* Constants.m */; };
+		BE515FEC1B3C86B800A7EE3E /* user_male_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = BE515FEB1B3C86B800A7EE3E /* user_male_circle.png */; };
+		BE515FEE1B3C98C200A7EE3E /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = BE515FED1B3C98C200A7EE3E /* logout.png */; };
+		BE515FF21B3CAC1C00A7EE3E /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = BE515FF11B3CAC1C00A7EE3E /* share.png */; };
+		BE515FF51B3CB9C300A7EE3E /* add_to_favorites_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BE515FF31B3CB9C300A7EE3E /* add_to_favorites_filled.png */; };
+		BE515FF61B3CB9C300A7EE3E /* add_to_favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = BE515FF41B3CB9C300A7EE3E /* add_to_favorites.png */; };
+		BE515FF81B3CC67900A7EE3E /* DressCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE823B9A1B3B360F00ED014F /* DressCollectionViewCell.m */; };
+		BE515FF91B3CC67900A7EE3E /* BookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE767EFA1B366F8D00C5EF16 /* BookMarkViewController.m */; };
+		BE515FFA1B3CC67900A7EE3E /* TodaysDressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA761621B374CD700B9E15B /* TodaysDressViewController.m */; };
+		BE541AF61B3CD5410076B872 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE541AF51B3CD5410076B872 /* Default-568h@2x.png */; };
+		BE541AFD1B3CD63C0076B872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE541AFC1B3CD63C0076B872 /* AppDelegate.m */; };
+		BE767EF81B366F7D00C5EF16 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE767EF71B366F7D00C5EF16 /* HomeViewController.m */; };
+		BE767EFF1B3671CA00C5EF16 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = BE767EFE1B3671CA00C5EF16 /* placeholder.png */; };
+		BE767F011B3671D400C5EF16 /* dislike.png in Resources */ = {isa = PBXBuildFile; fileRef = BE767F001B3671D400C5EF16 /* dislike.png */; };
+		BE767F031B3671DD00C5EF16 /* bookmark-black.png in Resources */ = {isa = PBXBuildFile; fileRef = BE767F021B3671DD00C5EF16 /* bookmark-black.png */; };
+		BE767F051B3671F600C5EF16 /* cloth-sweater.png in Resources */ = {isa = PBXBuildFile; fileRef = BE767F041B3671F600C5EF16 /* cloth-sweater.png */; };
+		BE823B851B3B00E600ED014F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = BE823B841B3B00E600ED014F /* Utility.m */; };
+		BE8B3F1F1B3D10FC00E95D5D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE48D5C11B3588FC00400E6F /* FBSDKCoreKit.framework */; };
+		BEA12E7F1B3CFF9A00BAEEA4 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA761591B37493C00B9E15B /* FBSDKShareKit.framework */; };
+		BEA761151B37412700B9E15B /* hanger.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA761141B37412700B9E15B /* hanger.png */; };
+		BEA761171B37429E00B9E15B /* Orange_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA761161B37429E00B9E15B /* Orange_Background.png */; };
+		BEA7611B1B37465B00B9E15B /* WhatToWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEA761191B37465B00B9E15B /* WhatToWear.xcdatamodeld */; };
+		BEA7611E1B37475B00B9E15B /* Dress.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA7611D1B37475B00B9E15B /* Dress.m */; };
+		BEA761211B37475C00B9E15B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA761201B37475C00B9E15B /* User.m */; };
+		BEA761581B37492700B9E15B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE48D5BF1B3588EA00400E6F /* FBSDKLoginKit.framework */; };
+		BEA7615D1B374BC100B9E15B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA7615C1B374BC100B9E15B /* ProfileViewController.m */; };
+		BEA761601B374BE300B9E15B /* AddMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA7615F1B374BE300B9E15B /* AddMoreViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE48D5AE1B35780500400E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE48D58C1B35780400400E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE48D5931B35780400400E6F;
+			remoteInfo = fbDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE48D5941B35780500400E6F /* WhatToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE48D5981B35780500400E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE48D5991B35780500400E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE48D59E1B35780500400E6F /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		BE48D59F1B35780500400E6F /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		BE48D5A21B35780500400E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE48D5A41B35780500400E6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE48D5A71B35780500400E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BE48D5AD1B35780500400E6F /* WhatToWearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE48D5B21B35780500400E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE48D5B31B35780500400E6F /* fbDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fbDemoTests.m; sourceTree = "<group>"; };
+		BE48D5BF1B3588EA00400E6F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../SDK's/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		BE48D5C11B3588FC00400E6F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../SDK's/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		BE48D5C31B35AEE700400E6F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		BE48D5C41B35AEE700400E6F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		BE48D5C61B35AEF400400E6F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BE48D5C71B35AEF400400E6F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BE515FE41B3C60E200A7EE3E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BE515FE51B3C60E200A7EE3E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		BE515FEB1B3C86B800A7EE3E /* user_male_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_male_circle.png; sourceTree = "<group>"; };
+		BE515FED1B3C98C200A7EE3E /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		BE515FF11B3CAC1C00A7EE3E /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		BE515FF31B3CB9C300A7EE3E /* add_to_favorites_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_to_favorites_filled.png; sourceTree = "<group>"; };
+		BE515FF41B3CB9C300A7EE3E /* add_to_favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_to_favorites.png; sourceTree = "<group>"; };
+		BE541AF51B3CD5410076B872 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		BE541AFB1B3CD63C0076B872 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE541AFC1B3CD63C0076B872 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE541AFE1B3CD6480076B872 /* WhatToWear-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhatToWear-Prefix.pch"; sourceTree = "<group>"; };
+		BE767EF61B366F7D00C5EF16 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BE767EF71B366F7D00C5EF16 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BE767EF91B366F8D00C5EF16 /* BookMarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkViewController.h; sourceTree = "<group>"; };
+		BE767EFA1B366F8D00C5EF16 /* BookMarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkViewController.m; sourceTree = "<group>"; };
+		BE767EFE1B3671CA00C5EF16 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		BE767F001B3671D400C5EF16 /* dislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dislike.png; sourceTree = "<group>"; };
+		BE767F021B3671DD00C5EF16 /* bookmark-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark-black.png"; sourceTree = "<group>"; };
+		BE767F041B3671F600C5EF16 /* cloth-sweater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloth-sweater.png"; sourceTree = "<group>"; };
+		BE823B831B3B00E600ED014F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		BE823B841B3B00E600ED014F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		BE823B991B3B360F00ED014F /* DressCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DressCollectionViewCell.h; sourceTree = "<group>"; };
+		BE823B9A1B3B360F00ED014F /* DressCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DressCollectionViewCell.m; sourceTree = "<group>"; };
+		BEA761141B37412700B9E15B /* hanger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hanger.png; sourceTree = "<group>"; };
+		BEA761161B37429E00B9E15B /* Orange_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange_Background.png; sourceTree = "<group>"; };
+		BEA7611A1B37465B00B9E15B /* WhatToWear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatToWear.xcdatamodel; sourceTree = "<group>"; };
+		BEA7611C1B37475B00B9E15B /* Dress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dress.h; sourceTree = "<group>"; };
+		BEA7611D1B37475B00B9E15B /* Dress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dress.m; sourceTree = "<group>"; };
+		BEA7611F1B37475C00B9E15B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BEA761201B37475C00B9E15B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BEA761591B37493C00B9E15B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../SDK's/FacebookSDK/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		BEA7615B1B374BC100B9E15B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		BEA7615C1B374BC100B9E15B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		BEA7615E1B374BE300B9E15B /* AddMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMoreViewController.h; sourceTree = "<group>"; };
+		BEA7615F1B374BE300B9E15B /* AddMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMoreViewController.m; sourceTree = "<group>"; };
+		BEA761611B374CD700B9E15B /* TodaysDressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodaysDressViewController.h; sourceTree = "<group>"; };
+		BEA761621B374CD700B9E15B /* TodaysDressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodaysDressViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE48D5911B35780400400E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8B3F1F1B3D10FC00E95D5D /* FBSDKCoreKit.framework in Frameworks */,
+				BEA12E7F1B3CFF9A00BAEEA4 /* FBSDKShareKit.framework in Frameworks */,
+				BEA761581B37492700B9E15B /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE48D5AA1B35780500400E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE48D58B1B35780400400E6F = {
+			isa = PBXGroup;
+			children = (
+				BE48D5961B35780500400E6F /* fbDemo */,
+				BE48D5B01B35780500400E6F /* fbDemoTests */,
+				BE48D5951B35780500400E6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE48D5951B35780500400E6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE48D5941B35780500400E6F /* WhatToWear.app */,
+				BE48D5AD1B35780500400E6F /* WhatToWearTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE48D5961B35780500400E6F /* fbDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BE823B901B3B072400ED014F /* AppDelegate */,
+				BE823B871B3B066300ED014F /* Initial */,
+				BE823B8F1B3B071300ED014F /* SignUp */,
+				BE823B8E1B3B070E00ED014F /* Login */,
+				BE823B881B3B066A00ED014F /* Home */,
+				BE823B8B1B3B06B700ED014F /* Profile */,
+				BE823B8C1B3B06BD00ED014F /* AddMore */,
+				BE515FF71B3CC62B00A7EE3E /* Wardrobe */,
+				BE823B891B3B069100ED014F /* Utility */,
+				BE48D5A11B35780500400E6F /* Main.storyboard */,
+				BE5680C01B38582900CC1A56 /* Frameworks */,
+				BEA761181B37463A00B9E15B /* Database */,
+				BE767EF51B366F5300C5EF16 /* Asessts */,
+				BE48D5A41B35780500400E6F /* Images.xcassets */,
+				BE48D5A61B35780500400E6F /* LaunchScreen.xib */,
+				BE48D5971B35780500400E6F /* Supporting Files */,
+			);
+			path = fbDemo;
+			sourceTree = "<group>";
+		};
+		BE48D5971B35780500400E6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE541AFE1B3CD6480076B872 /* WhatToWear-Prefix.pch */,
+				BE48D5981B35780500400E6F /* Info.plist */,
+				BE48D5991B35780500400E6F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE48D5B01B35780500400E6F /* fbDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE48D5B31B35780500400E6F /* fbDemoTests.m */,
+				BE48D5B11B35780500400E6F /* Supporting Files */,
+			);
+			path = fbDemoTests;
+			sourceTree = "<group>";
+		};
+		BE48D5B11B35780500400E6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE48D5B21B35780500400E6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE515FF71B3CC62B00A7EE3E /* Wardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				BE823B9C1B3B361500ED014F /* DressCustomCell */,
+				BE823B8A1B3B06B100ED014F /* Bookmark */,
+				BE823B8D1B3B06C200ED014F /* TodaysDress */,
+			);
+			name = Wardrobe;
+			sourceTree = "<group>";
+		};
+		BE5680C01B38582900CC1A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEA761591B37493C00B9E15B /* FBSDKShareKit.framework */,
+				BE48D5C11B3588FC00400E6F /* FBSDKCoreKit.framework */,
+				BE48D5BF1B3588EA00400E6F /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BE767EF51B366F5300C5EF16 /* Asessts */ = {
+			isa = PBXGroup;
+			children = (
+				BE541AF51B3CD5410076B872 /* Default-568h@2x.png */,
+				BE515FF31B3CB9C300A7EE3E /* add_to_favorites_filled.png */,
+				BE515FF41B3CB9C300A7EE3E /* add_to_favorites.png */,
+				BE515FF11B3CAC1C00A7EE3E /* share.png */,
+				BE515FED1B3C98C200A7EE3E /* logout.png */,
+				BE515FEB1B3C86B800A7EE3E /* user_male_circle.png */,
+				BEA761141B37412700B9E15B /* hanger.png */,
+				BE767F041B3671F600C5EF16 /* cloth-sweater.png */,
+				BE767F001B3671D400C5EF16 /* dislike.png */,
+				BEA761161B37429E00B9E15B /* Orange_Background.png */,
+				BE767F021B3671DD00C5EF16 /* bookmark-black.png */,
+				BE767EFE1B3671CA00C5EF16 /* placeholder.png */,
+			);
+			name = Asessts;
+			sourceTree = "<group>";
+		};
+		BE823B871B3B066300ED014F /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				BE48D59E1B35780500400E6F /* InitialViewController.h */,
+				BE48D59F1B35780500400E6F /* InitialViewController.m */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
+		BE823B881B3B066A00ED014F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BE767EF61B366F7D00C5EF16 /* HomeViewController.h */,
+				BE767EF71B366F7D00C5EF16 /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		BE823B891B3B069100ED014F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BE823B831B3B00E600ED014F /* Utility.h */,
+				BE823B841B3B00E600ED014F /* Utility.m */,
+				BE515FE41B3C60E200A7EE3E /* Constants.h */,
+				BE515FE51B3C60E200A7EE3E /* Constants.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		BE823B8A1B3B06B100ED014F /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				BE767EF91B366F8D00C5EF16 /* BookMarkViewController.h */,
+				BE767EFA1B366F8D00C5EF16 /* BookMarkViewController.m */,
+			);
+			name = Bookmark;
+			sourceTree = "<group>";
+		};
+		BE823B8B1B3B06B700ED014F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BEA7615B1B374BC100B9E15B /* ProfileViewController.h */,
+				BEA7615C1B374BC100B9E15B /* ProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		BE823B8C1B3B06BD00ED014F /* AddMore */ = {
+			isa = PBXGroup;
+			children = (
+				BEA7615E1B374BE300B9E15B /* AddMoreViewController.h */,
+				BEA7615F1B374BE300B9E15B /* AddMoreViewController.m */,
+			);
+			name = AddMore;
+			sourceTree = "<group>";
+		};
+		BE823B8D1B3B06C200ED014F /* TodaysDress */ = {
+			isa = PBXGroup;
+			children = (
+				BEA761611B374CD700B9E15B /* TodaysDressViewController.h */,
+				BEA761621B374CD700B9E15B /* TodaysDressViewController.m */,
+			);
+			name = TodaysDress;
+			sourceTree = "<group>";
+		};
+		BE823B8E1B3B070E00ED014F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BE48D5C61B35AEF400400E6F /* LoginViewController.h */,
+				BE48D5C71B35AEF400400E6F /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		BE823B8F1B3B071300ED014F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BE48D5C31B35AEE700400E6F /* SignUpViewController.h */,
+				BE48D5C41B35AEE700400E6F /* SignUpViewController.m */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		BE823B901B3B072400ED014F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BE541AFB1B3CD63C0076B872 /* AppDelegate.h */,
+				BE541AFC1B3CD63C0076B872 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BE823B911B3B073C00ED014F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BEA7611F1B37475C00B9E15B /* User.h */,
+				BEA761201B37475C00B9E15B /* User.m */,
+				BEA7611C1B37475B00B9E15B /* Dress.h */,
+				BEA7611D1B37475B00B9E15B /* Dress.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		BE823B9C1B3B361500ED014F /* DressCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE823B991B3B360F00ED014F /* DressCollectionViewCell.h */,
+				BE823B9A1B3B360F00ED014F /* DressCollectionViewCell.m */,
+			);
+			name = DressCustomCell;
+			sourceTree = "<group>";
+		};
+		BEA761181B37463A00B9E15B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BE823B911B3B073C00ED014F /* Entity */,
+				BEA761191B37465B00B9E15B /* WhatToWear.xcdatamodeld */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE48D5931B35780400400E6F /* WhatToWear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE48D5B71B35780500400E6F /* Build configuration list for PBXNativeTarget "WhatToWear" */;
+			buildPhases = (
+				BE48D5901B35780400400E6F /* Sources */,
+				BE48D5911B35780400400E6F /* Frameworks */,
+				BE48D5921B35780400400E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatToWear;
+			productName = fbDemo;
+			productReference = BE48D5941B35780500400E6F /* WhatToWear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE48D5AC1B35780500400E6F /* WhatToWearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE48D5BA1B35780500400E6F /* Build configuration list for PBXNativeTarget "WhatToWearTests" */;
+			buildPhases = (
+				BE48D5A91B35780500400E6F /* Sources */,
+				BE48D5AA1B35780500400E6F /* Frameworks */,
+				BE48D5AB1B35780500400E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE48D5AF1B35780500400E6F /* PBXTargetDependency */,
+			);
+			name = WhatToWearTests;
+			productName = fbDemoTests;
+			productReference = BE48D5AD1B35780500400E6F /* WhatToWearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE48D58C1B35780400400E6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nikhil Wali";
+				TargetAttributes = {
+					BE48D5931B35780400400E6F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BE48D5AC1B35780500400E6F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = BE48D5931B35780400400E6F;
+					};
+				};
+			};
+			buildConfigurationList = BE48D58F1B35780400400E6F /* Build configuration list for PBXProject "WhatToWear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE48D58B1B35780400400E6F;
+			productRefGroup = BE48D5951B35780500400E6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE48D5931B35780400400E6F /* WhatToWear */,
+				BE48D5AC1B35780500400E6F /* WhatToWearTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE48D5921B35780400400E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE48D5A31B35780500400E6F /* Main.storyboard in Resources */,
+				BE48D5A81B35780500400E6F /* LaunchScreen.xib in Resources */,
+				BE515FF51B3CB9C300A7EE3E /* add_to_favorites_filled.png in Resources */,
+				BE767F031B3671DD00C5EF16 /* bookmark-black.png in Resources */,
+				BEA761171B37429E00B9E15B /* Orange_Background.png in Resources */,
+				BE767F011B3671D400C5EF16 /* dislike.png in Resources */,
+				BE515FEC1B3C86B800A7EE3E /* user_male_circle.png in Resources */,
+				BEA761151B37412700B9E15B /* hanger.png in Resources */,
+				BE541AF61B3CD5410076B872 /* Default-568h@2x.png in Resources */,
+				BE515FF21B3CAC1C00A7EE3E /* share.png in Resources */,
+				BE515FEE1B3C98C200A7EE3E /* logout.png in Resources */,
+				BE515FF61B3CB9C300A7EE3E /* add_to_favorites.png in Resources */,
+				BE767EFF1B3671CA00C5EF16 /* placeholder.png in Resources */,
+				BE48D5A51B35780500400E6F /* Images.xcassets in Resources */,
+				BE767F051B3671F600C5EF16 /* cloth-sweater.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE48D5AB1B35780500400E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE48D5901B35780400400E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE515FF81B3CC67900A7EE3E /* DressCollectionViewCell.m in Sources */,
+				BE515FF91B3CC67900A7EE3E /* BookMarkViewController.m in Sources */,
+				BE515FFA1B3CC67900A7EE3E /* TodaysDressViewController.m in Sources */,
+				BEA761211B37475C00B9E15B /* User.m in Sources */,
+				BE541AFD1B3CD63C0076B872 /* AppDelegate.m in Sources */,
+				BE48D5A01B35780500400E6F /* InitialViewController.m in Sources */,
+				BE515FE61B3C60E200A7EE3E /* Constants.m in Sources */,
+				BE823B851B3B00E600ED014F /* Utility.m in Sources */,
+				BE48D5C51B35AEE700400E6F /* SignUpViewController.m in Sources */,
+				BEA7611E1B37475B00B9E15B /* Dress.m in Sources */,
+				BE48D59A1B35780500400E6F /* main.m in Sources */,
+				BEA7611B1B37465B00B9E15B /* WhatToWear.xcdatamodeld in Sources */,
+				BEA7615D1B374BC100B9E15B /* ProfileViewController.m in Sources */,
+				BEA761601B374BE300B9E15B /* AddMoreViewController.m in Sources */,
+				BE48D5C81B35AEF400400E6F /* LoginViewController.m in Sources */,
+				BE767EF81B366F7D00C5EF16 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE48D5A91B35780500400E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE48D5B41B35780500400E6F /* fbDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE48D5AF1B35780500400E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE48D5931B35780400400E6F /* WhatToWear */;
+			targetProxy = BE48D5AE1B35780500400E6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE48D5A11B35780500400E6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE48D5A21B35780500400E6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE48D5A61B35780500400E6F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE48D5A71B35780500400E6F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE48D5B51B35780500400E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE48D5B61B35780500400E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE48D5B81B35780500400E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					"/Users/nikhilwali/Documents/Xcode_Work/SDK's/FacebookSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fbDemo/WhatToWear-Prefix.pch";
+				INFOPLIST_FILE = fbDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = WhatToWear;
+			};
+			name = Debug;
+		};
+		BE48D5B91B35780500400E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					"/Users/nikhilwali/Documents/Xcode_Work/SDK's/FacebookSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fbDemo/WhatToWear-Prefix.pch";
+				INFOPLIST_FILE = fbDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = WhatToWear;
+			};
+			name = Release;
+		};
+		BE48D5BB1B35780500400E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fbDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = WhatToWearTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatToWear.app/WhatToWear";
+			};
+			name = Debug;
+		};
+		BE48D5BC1B35780500400E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fbDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = WhatToWearTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatToWear.app/WhatToWear";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE48D58F1B35780400400E6F /* Build configuration list for PBXProject "WhatToWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE48D5B51B35780500400E6F /* Debug */,
+				BE48D5B61B35780500400E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE48D5B71B35780500400E6F /* Build configuration list for PBXNativeTarget "WhatToWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE48D5B81B35780500400E6F /* Debug */,
+				BE48D5B91B35780500400E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE48D5BA1B35780500400E6F /* Build configuration list for PBXNativeTarget "WhatToWearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE48D5BB1B35780500400E6F /* Debug */,
+				BE48D5BC1B35780500400E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEA761191B37465B00B9E15B /* WhatToWear.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEA7611A1B37465B00B9E15B /* WhatToWear.xcdatamodel */,
+			);
+			currentVersion = BEA7611A1B37465B00B9E15B /* WhatToWear.xcdatamodel */;
+			path = WhatToWear.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE48D58C1B35780400400E6F /* Project object */;
+}

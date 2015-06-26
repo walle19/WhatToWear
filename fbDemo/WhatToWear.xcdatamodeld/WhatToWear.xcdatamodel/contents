@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Dress" representedClassName="Dress" syncable="YES">
+        <attribute name="dressData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isBookmarked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="dresses" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dresses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dress" inverseName="user" inverseEntity="Dress" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Dress" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="User" positionX="196" positionY="-144" width="128" height="120"/>
+    </elements>
+</model>
