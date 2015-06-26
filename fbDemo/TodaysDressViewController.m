@@ -70,10 +70,11 @@ NSString * const UNBOOKMARKED_IMAGE = @"add_to_favorites";
 
 - (void)shareDressImage {
     
-    DressCollectionViewCell *cell = self.dressCollectionView.visibleCells.firstObject;
+    DressCollectionViewCell *cell = self.dressCollectionView.visibleCells.lastObject;
     
     NSIndexPath *indexPath = [self.dressCollectionView indexPathForCell:cell];
-    
+    NSLog(@"indexPath : %@",indexPath);
+
     Dress *dress = self.dresses[(NSUInteger)indexPath.row];
     
     FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
@@ -119,7 +120,7 @@ NSString * const UNBOOKMARKED_IMAGE = @"add_to_favorites";
     Dress *dress = (Dress *)self.dresses[(NSUInteger)indexPath.row];
     
     cell.dressImageView.image = [UIImage imageWithData:dress.dressData];
-        
+    
     UIImage *bookmarkOrUnbookmarkImage = (dress.isBookmarked.boolValue) ? [UIImage imageNamed:BOOKMARKED_IMAGE] : [UIImage imageNamed:UNBOOKMARKED_IMAGE];
     
     [cell.bookmarkButton setImage:bookmarkOrUnbookmarkImage forState:UIControlStateNormal];
@@ -130,9 +131,11 @@ NSString * const UNBOOKMARKED_IMAGE = @"add_to_favorites";
 
 #pragma mark - Dress delegate method
 
-- (void)bookmarkSelectedDress {
+- (void)bookmarkSelectedDress:(id)sender {
     
-    DressCollectionViewCell *cell = self.dressCollectionView.visibleCells.firstObject;
+    UIButton *dislikeButton = (UIButton *)sender;
+    
+    DressCollectionViewCell *cell = (DressCollectionViewCell *)dislikeButton.superview.superview;
     
     NSIndexPath *indexPath = [self.dressCollectionView indexPathForCell:cell];
     NSLog(@"%@",indexPath);
@@ -172,14 +175,14 @@ NSString * const UNBOOKMARKED_IMAGE = @"add_to_favorites";
         
     }
     else {
-     
+        
         indexPath = [NSIndexPath indexPathForItem:nextRow inSection:0];
         
     }
     
     [self.view layoutIfNeeded];
     [self.dressCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
-
+    
 }
 
 
@@ -188,6 +191,9 @@ NSString * const UNBOOKMARKED_IMAGE = @"add_to_favorites";
 - (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary *)results {
     
     NSLog(@"Share Complete");
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
     [Utility showAlertWithTitle:ALERT_TITLE_KEY message:DRESS_SHARED controller:self completionBlock:^(UIAlertAction *action) {
         
         NSLog(@"Ok tapped");
@@ -199,6 +205,8 @@ NSString * const UNBOOKMARKED_IMAGE = @"add_to_favorites";
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error {
     
     NSLog(@"Share Failed");
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     [Utility showAlertWithTitle:ALERT_TITLE_KEY message:error.localizedDescription controller:self completionBlock:^(UIAlertAction *action) {
         

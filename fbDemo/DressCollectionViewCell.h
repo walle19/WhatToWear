@@ -12,7 +12,7 @@
 
 @required
 
-- (void)bookmarkSelectedDress;
+- (void)bookmarkSelectedDress:(id)sender;
 
 @optional
 

@@ -12,16 +12,16 @@
 
 - (IBAction)bookmarkedDress:(id)sender {
     
-    if ([self.delegate respondsToSelector:@selector(bookmarkSelectedDress)]) {
-    
-        [self.delegate bookmarkSelectedDress];
+    if ([self.delegate respondsToSelector:@selector(bookmarkSelectedDress:)]) {
+        
+        [self.delegate bookmarkSelectedDress:sender];
         
     }
     
 }
 
 - (IBAction)dislikedDress:(id)sender {
-
+    
     if ([self.delegate respondsToSelector:@selector(nextDressImage:)]) {
         
         [self.delegate nextDressImage:sender];

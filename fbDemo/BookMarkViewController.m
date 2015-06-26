@@ -38,7 +38,7 @@ NSString * const BOOKMARKED_DRESS_CUSTOM_CELL_ID = @"bookmarkedCell";
     [self addShareBarButton];
     
     [self updateCollectionView];
-
+    
     self.appDelegate = [Utility appDelegateInstance];
     
 }
@@ -56,13 +56,13 @@ NSString * const BOOKMARKED_DRESS_CUSTOM_CELL_ID = @"bookmarkedCell";
     UIBarButtonItem *shareBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:SHARE_ICON] style:UIBarButtonItemStylePlain target:self action:@selector(shareDressImage)];
     
     self.navigationItem.rightBarButtonItems = @[shareBarButtonItem];
-
+    
 }
 
 - (void)updateCollectionView {
     
     self.bookmarkedDresses = [NSMutableArray arrayWithArray:self.user.dresses.allObjects];
-
+    
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isBookmarked = 1"];
     
     NSArray *bookmarks = self.bookmarkedDresses.copy;
@@ -70,7 +70,7 @@ NSString * const BOOKMARKED_DRESS_CUSTOM_CELL_ID = @"bookmarkedCell";
     
     self.bookmarkedDresses = [NSMutableArray arrayWithArray:bookmarks];
     
-
+    
     if (![self isAnyDressAvailable]) {
         
         return;
@@ -98,16 +98,15 @@ NSString * const BOOKMARKED_DRESS_CUSTOM_CELL_ID = @"bookmarkedCell";
 
 - (void)shareDressImage {
     
-    DressCollectionViewCell *cell = self.bookmarkedDressCollectionView.visibleCells.firstObject;
+    DressCollectionViewCell *cell = self.bookmarkedDressCollectionView.visibleCells.lastObject;
     
     NSIndexPath *indexPath = [self.bookmarkedDressCollectionView indexPathForCell:cell];
-    NSLog(@"%@",indexPath);
+    NSLog(@"indexPath : %@",indexPath);
     
     Dress *dress = self.bookmarkedDresses[(NSUInteger)indexPath.row];
-
+    
     FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
     photo.image = [UIImage imageWithData:dress.dressData];
-   
     photo.userGenerated = YES;
     
     FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
@@ -150,9 +149,11 @@ NSString * const BOOKMARKED_DRESS_CUSTOM_CELL_ID = @"bookmarkedCell";
 
 #pragma mark - Dress delegate method
 
-- (void)bookmarkSelectedDress {
+- (void)bookmarkSelectedDress:(id)sender {
     
-    DressCollectionViewCell *cell = self.bookmarkedDressCollectionView.visibleCells.firstObject;
+    UIButton *dislikeButton = (UIButton *)sender;
+    
+    DressCollectionViewCell *cell = (DressCollectionViewCell *)dislikeButton.superview.superview;
     
     NSIndexPath *indexPath = [self.bookmarkedDressCollectionView indexPathForCell:cell];
     
@@ -187,24 +188,28 @@ NSString * const BOOKMARKED_DRESS_CUSTOM_CELL_ID = @"bookmarkedCell";
     
     NSLog(@"Share Complete");
     
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
     [Utility showAlertWithTitle:ALERT_TITLE_KEY message:DRESS_SHARED controller:self completionBlock:^(UIAlertAction *action) {
-
+        
         NSLog(@"Ok tapped");
         
     }];
-
+    
 }
 
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error {
-
+    
     NSLog(@"Share Failed");
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     [Utility showAlertWithTitle:ALERT_TITLE_KEY message:error.localizedDescription controller:self completionBlock:^(UIAlertAction *action) {
         
         NSLog(@"Ok tapped");
         
     }];
-
+    
 }
 
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer {

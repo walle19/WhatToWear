@@ -32,14 +32,14 @@
 		BE767F031B3671DD00C5EF16 /* bookmark-black.png in Resources */ = {isa = PBXBuildFile; fileRef = BE767F021B3671DD00C5EF16 /* bookmark-black.png */; };
 		BE767F051B3671F600C5EF16 /* cloth-sweater.png in Resources */ = {isa = PBXBuildFile; fileRef = BE767F041B3671F600C5EF16 /* cloth-sweater.png */; };
 		BE823B851B3B00E600ED014F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = BE823B841B3B00E600ED014F /* Utility.m */; };
-		BE8B3F1F1B3D10FC00E95D5D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE48D5C11B3588FC00400E6F /* FBSDKCoreKit.framework */; };
-		BEA12E7F1B3CFF9A00BAEEA4 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA761591B37493C00B9E15B /* FBSDKShareKit.framework */; };
+		BE8585C11B3D1D61000CF9FC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8585BE1B3D1D61000CF9FC /* FBSDKCoreKit.framework */; };
+		BE8585C21B3D1D61000CF9FC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8585BF1B3D1D61000CF9FC /* FBSDKLoginKit.framework */; };
+		BE8585C31B3D1D61000CF9FC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8585C01B3D1D61000CF9FC /* FBSDKShareKit.framework */; };
 		BEA761151B37412700B9E15B /* hanger.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA761141B37412700B9E15B /* hanger.png */; };
 		BEA761171B37429E00B9E15B /* Orange_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA761161B37429E00B9E15B /* Orange_Background.png */; };
 		BEA7611B1B37465B00B9E15B /* WhatToWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEA761191B37465B00B9E15B /* WhatToWear.xcdatamodeld */; };
 		BEA7611E1B37475B00B9E15B /* Dress.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA7611D1B37475B00B9E15B /* Dress.m */; };
 		BEA761211B37475C00B9E15B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA761201B37475C00B9E15B /* User.m */; };
-		BEA761581B37492700B9E15B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE48D5BF1B3588EA00400E6F /* FBSDKLoginKit.framework */; };
 		BEA7615D1B374BC100B9E15B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA7615C1B374BC100B9E15B /* ProfileViewController.m */; };
 		BEA761601B374BE300B9E15B /* AddMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA7615F1B374BE300B9E15B /* AddMoreViewController.m */; };
 /* End PBXBuildFile section */
@@ -95,6 +95,9 @@
 		BE823B841B3B00E600ED014F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		BE823B991B3B360F00ED014F /* DressCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DressCollectionViewCell.h; sourceTree = "<group>"; };
 		BE823B9A1B3B360F00ED014F /* DressCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DressCollectionViewCell.m; sourceTree = "<group>"; };
+		BE8585BE1B3D1D61000CF9FC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		BE8585BF1B3D1D61000CF9FC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BE8585C01B3D1D61000CF9FC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		BEA761141B37412700B9E15B /* hanger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hanger.png; sourceTree = "<group>"; };
 		BEA761161B37429E00B9E15B /* Orange_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange_Background.png; sourceTree = "<group>"; };
 		BEA7611A1B37465B00B9E15B /* WhatToWear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatToWear.xcdatamodel; sourceTree = "<group>"; };
@@ -116,9 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8B3F1F1B3D10FC00E95D5D /* FBSDKCoreKit.framework in Frameworks */,
-				BEA12E7F1B3CFF9A00BAEEA4 /* FBSDKShareKit.framework in Frameworks */,
-				BEA761581B37492700B9E15B /* FBSDKLoginKit.framework in Frameworks */,
+				BE8585C11B3D1D61000CF9FC /* FBSDKCoreKit.framework in Frameworks */,
+				BE8585C21B3D1D61000CF9FC /* FBSDKLoginKit.framework in Frameworks */,
+				BE8585C31B3D1D61000CF9FC /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +138,9 @@
 		BE48D58B1B35780400400E6F = {
 			isa = PBXGroup;
 			children = (
+				BE8585BE1B3D1D61000CF9FC /* FBSDKCoreKit.framework */,
+				BE8585BF1B3D1D61000CF9FC /* FBSDKLoginKit.framework */,
+				BE8585C01B3D1D61000CF9FC /* FBSDKShareKit.framework */,
 				BE48D5961B35780500400E6F /* fbDemo */,
 				BE48D5B01B35780500400E6F /* fbDemoTests */,
 				BE48D5951B35780500400E6F /* Products */,
@@ -625,7 +631,8 @@
 					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
 					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
 					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
-					"/Users/nikhilwali/Documents/Xcode_Work/SDK's/FacebookSDK",
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fbDemo/WhatToWear-Prefix.pch";
@@ -650,7 +657,8 @@
 					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
 					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
 					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
-					"/Users/nikhilwali/Documents/Xcode_Work/SDK's/FacebookSDK",
+					/Users/nikhilwali/Documents/Xcode_Work/SDKs/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fbDemo/WhatToWear-Prefix.pch";
