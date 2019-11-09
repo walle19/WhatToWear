@@ -14,3 +14,11 @@ Device-Target : iPhone 4s, iPhone 5, iPhone 5S, iPhone 6 and iPhone 6 plus.
 iOS-Target(min.) : 8.0 and above
 
 Tested on device : iPhone 4s, iPhone 5 and iPhone 6.
+
+### Author
+
+[Nikhil Wali](https://github.com/walle19)
+
+### License
+
+Copyright © 2015, [Nikhil Wali](https://github.com/walle19).
